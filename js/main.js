@@ -1,19 +1,25 @@
 /* ============================================
-   IA BOLIVIA — Main JavaScript
+   JEEP HUB / IA BOLIVIA — Main JavaScript
+   - Real form submission via FormSubmit.co
+   - Functional buttons & navigation
+   - Animated counters, scroll reveal, mobile menu
    ============================================ */
 
 (function () {
   'use strict';
 
   /* --- DOM references --- */
-  const navbar = document.getElementById('navbar');
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  const contactForm = document.getElementById('contactForm');
-  const formSuccess = document.getElementById('formSuccess');
-  const allNavLinks = document.querySelectorAll('.nav-link');
-  const reveals = document.querySelectorAll('.reveal');
-  const statNumbers = document.querySelectorAll('.stat__number[data-target]');
+  var navbar = document.getElementById('navbar');
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  var contactForm = document.getElementById('contactForm');
+  var formSuccess = document.getElementById('formSuccess');
+  var submitBtn = document.getElementById('submitBtn');
+  var submitText = document.getElementById('submitText');
+  var submitSpinner = document.getElementById('submitSpinner');
+  var allNavLinks = document.querySelectorAll('.nav-link');
+  var reveals = document.querySelectorAll('.reveal');
+  var statNumbers = document.querySelectorAll('.stat__number[data-target]');
 
   /* --- Navbar scroll effect --- */
   function handleScroll() {
@@ -97,13 +103,12 @@
     statNumbers.forEach(function (el) {
       var target = parseInt(el.getAttribute('data-target'), 10);
       var duration = 2000;
-      var start = 0;
       var startTime = null;
 
       function step(timestamp) {
         if (!startTime) startTime = timestamp;
         var progress = Math.min((timestamp - startTime) / duration, 1);
-        var eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        var eased = 1 - Math.pow(1 - progress, 3);
         el.textContent = Math.floor(eased * target);
         if (progress < 1) {
           window.requestAnimationFrame(step);
@@ -132,12 +137,12 @@
     statsObserver.observe(statsSection);
   }
 
-  /* --- Contact form handling --- */
+  /* --- Contact form: real submission via fetch to FormSubmit.co --- */
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      // Simple client-side validation
+      /* Client-side validation */
       var nombre = document.getElementById('nombre');
       var email = document.getElementById('email');
       var mensaje = document.getElementById('mensaje');
@@ -152,7 +157,6 @@
         }
       });
 
-      // Basic email pattern check
       if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         email.style.borderColor = '#EF4444';
         valid = false;
@@ -160,25 +164,52 @@
 
       if (!valid) return;
 
-      // Simulate form submission
-      var submitBtn = contactForm.querySelector('button[type="submit"]');
-      submitBtn.textContent = 'Enviando...';
+      /* Show loading state */
+      submitText.textContent = 'Enviando...';
+      submitSpinner.classList.remove('hidden');
       submitBtn.disabled = true;
 
-      setTimeout(function () {
+      /* Send via fetch (AJAX) so user stays on the page */
+      var formData = new FormData(contactForm);
+
+      fetch(contactForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (response) {
+        if (response.ok) {
+          formSuccess.textContent = '✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.';
+          formSuccess.classList.add('show');
+          contactForm.reset();
+        } else {
+          formSuccess.textContent = '⚠️ Hubo un error. Intenta de nuevo o escríbenos por WhatsApp.';
+          formSuccess.style.borderColor = '#EF4444';
+          formSuccess.style.color = '#EF4444';
+          formSuccess.classList.add('show');
+        }
+      })
+      .catch(function () {
+        formSuccess.textContent = '⚠️ Error de conexión. Intenta de nuevo o escríbenos por WhatsApp.';
+        formSuccess.style.borderColor = '#EF4444';
+        formSuccess.style.color = '#EF4444';
         formSuccess.classList.add('show');
-        contactForm.reset();
-        submitBtn.textContent = 'Enviar Mensaje';
+      })
+      .finally(function () {
+        submitText.textContent = 'Enviar Mensaje';
+        submitSpinner.classList.add('hidden');
         submitBtn.disabled = false;
 
         setTimeout(function () {
           formSuccess.classList.remove('show');
-        }, 5000);
-      }, 1200);
+          formSuccess.style.borderColor = '';
+          formSuccess.style.color = '';
+        }, 6000);
+      });
     });
 
-    // Clear error styles on input
-    var formInputs = contactForm.querySelectorAll('input, textarea');
+    /* Clear error styles on input */
+    var formInputs = contactForm.querySelectorAll('input, textarea, select');
     formInputs.forEach(function (input) {
       input.addEventListener('input', function () {
         this.style.borderColor = '';
@@ -203,7 +234,6 @@
   window.addEventListener('scroll', handleScroll, { passive: true });
   window.addEventListener('load', function () {
     handleScroll();
-    /* Trigger reveals that are already in viewport on load */
     reveals.forEach(function (el) {
       var rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight) {

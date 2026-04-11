@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="IA Bolivia — Inteligencia Artificial, Innovación Digital y Talento Humano para estrategias empresariales sostenibles en Latinoamérica.">
-  <meta name="theme-color" content="#0B1D3A">
-  <title>IA Bolivia — Inteligencia Artificial &amp; Innovación Digital</title>
+  <meta name="description" content="Jeep Hub — Inteligencia Artificial, Innovación Digital y Talento Humano. Bolivianos por el Mundo. Cochabamba, Bolivia.">
+  <meta name="theme-color" content="#0A0E1A">
+  <title>Jeep Hub — IA Bolivia | Bolivianos por el Mundo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,13 +17,14 @@
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="#hero" class="navbar__logo">
-        <span class="logo-icon">&#9670;</span> IA <span class="logo-accent">Bolivia</span>
+        <span class="logo-text">JEEP<span class="logo-accent">HUB</span></span>
       </a>
       <nav class="navbar__links" id="navLinks">
         <a href="#hero" class="nav-link active">Inicio</a>
-        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#mision" class="nav-link">Misión</a>
         <a href="#servicios" class="nav-link">Servicios</a>
         <a href="#etapas" class="nav-link">Proceso</a>
+        <a href="#app" class="nav-link">App</a>
         <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
       <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
@@ -32,28 +33,82 @@
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- ===== HERO — matches the reference image ===== -->
   <section class="hero" id="hero">
     <div class="hero__bg">
-      <img src="portada .jpg" alt="Paisaje boliviano con equipo de innovación tecnológica" loading="eager">
+      <img src="portada .jpg" alt="Paisaje boliviano — padre e hija caminando con teleférico y ciudad de fondo" loading="eager">
       <div class="hero__overlay"></div>
     </div>
+
+    <!-- Circuit pattern overlay (decorative) -->
+    <div class="hero__circuits" aria-hidden="true"></div>
+
     <div class="container hero__content">
-      <div class="hero__badge">🚀 Innovación desde Bolivia para el mundo</div>
-      <h1 class="hero__title">
-        Inteligencia Artificial<br>
-        <span class="hero__highlight">& Talento Humano</span>
-      </h1>
-      <p class="hero__subtitle">
-        Gestionamos estrategias empresariales sostenibles combinando IA, innovación digital
-        y el talento humano boliviano. Recomponiendo la soberanía tecnológica latinoamericana
-        con productos de fácil acceso.
-      </p>
-      <div class="hero__actions">
-        <a href="#servicios" class="btn btn--primary">Descubrir Servicios</a>
-        <a href="#contacto" class="btn btn--outline">Contáctanos</a>
+      <!-- Left column: Brand + App -->
+      <div class="hero__left">
+        <h1 class="hero__title">
+          <span class="title-flag">IA BOLIVIA</span>
+        </h1>
+        <p class="hero__tagline">BOLIVIANOS POR EL MUNDO</p>
+
+        <!-- AI Icon (glowing card like the image) -->
+        <div class="hero__ai-card">
+          <div class="ai-card__icon">
+            <svg viewBox="0 0 64 64" width="54" height="54" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="32" cy="20" r="10"/>
+              <path d="M22 20c0 8 10 16 10 24"/>
+              <path d="M42 20c0 8-10 16-10 24"/>
+              <circle cx="20" cy="14" r="3"/>
+              <circle cx="44" cy="14" r="3"/>
+              <path d="M20 14h-6M44 14h6"/>
+              <path d="M32 10V4"/>
+              <text x="38" y="18" font-size="10" fill="currentColor" stroke="none" font-weight="700">A</text>
+              <path d="M26 48a6 6 0 0012 0" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="ai-card__label">Prueba Ahora</span>
+        </div>
+
+        <!-- App Store badges -->
+        <div class="hero__badges">
+          <a href="#app" class="store-badge" aria-label="Descargar en App Store">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+          <a href="#app" class="store-badge" aria-label="Disponible en Google Play">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.48 1.42-2.53-2.53 2.53-2.53 2.48 1.26M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+            <div>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="hero__stats">
+
+      <!-- Right column: Mission Statement (frosted glass panel) -->
+      <div class="hero__right">
+        <div class="mission-panel">
+          <h2 class="mission-panel__title">MISSION STATEMENT</h2>
+          <p>
+            En Jeep Hub nos enfocamos en el equilibrio de la Inteligencia Artificial,
+            la Innovación digital y el talento humano para gestionar estrategias
+            empresariales sostenibles para organizaciones.
+          </p>
+          <p>
+            Recomponemos la soberanía latinoamericana en el mundo con productos IA
+            de fácil acceso, contribuyendo al desarrollo tecnológico de Bolivia
+            y toda la comunidad andina.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero__stats-bar">
+      <div class="container hero__stats">
         <div class="stat">
           <span class="stat__number" data-target="150">0</span>+
           <span class="stat__label">Proyectos</span>
@@ -63,48 +118,47 @@
           <span class="stat__label">Empresas</span>
         </div>
         <div class="stat">
+          <span class="stat__number" data-target="12">0</span>+
+          <span class="stat__label">Países</span>
+        </div>
+        <div class="stat">
           <span class="stat__number" data-target="4">0</span>
-          <span class="stat__label">Etapas de Impacto</span>
+          <span class="stat__label">Etapas</span>
         </div>
       </div>
     </div>
-    <div class="hero__scroll">
-      <a href="#nosotros" aria-label="Desplazarse hacia abajo">
-        <span class="scroll-icon"></span>
-      </a>
-    </div>
   </section>
 
-  <!-- ===== NOSOTROS ===== -->
-  <section class="section nosotros" id="nosotros">
+  <!-- ===== MISIÓN / NOSOTROS ===== -->
+  <section class="section mision" id="mision">
     <div class="container">
       <div class="section__header">
         <span class="section__tag">Quiénes Somos</span>
         <h2 class="section__title">El equilibrio entre <span class="text-gradient">tecnología y humanidad</span></h2>
         <p class="section__desc">
-          En IA Bolivia nos enfocamos en el equilibrio de la Inteligencia Artificial,
+          En Jeep Hub nos enfocamos en el equilibrio de la Inteligencia Artificial,
           la Innovación digital y el talento humano para gestionar estrategias empresariales
-          sostenibles para organizaciones.
+          sostenibles para organizaciones. Bolivianos por el Mundo.
         </p>
       </div>
-      <div class="nosotros__grid">
-        <div class="nosotros__card reveal">
-          <div class="nosotros__icon">🤖</div>
+      <div class="mision__grid">
+        <div class="mision__card reveal">
+          <div class="mision__icon">🤖</div>
           <h3>Inteligencia Artificial</h3>
           <p>Desarrollamos soluciones de IA adaptadas a las necesidades reales de las empresas bolivianas y latinoamericanas.</p>
         </div>
-        <div class="nosotros__card reveal">
-          <div class="nosotros__icon">💡</div>
+        <div class="mision__card reveal">
+          <div class="mision__icon">💡</div>
           <h3>Innovación Digital</h3>
           <p>Transformamos procesos tradicionales con tecnología de punta, accesible y sostenible para el crecimiento empresarial.</p>
         </div>
-        <div class="nosotros__card reveal">
-          <div class="nosotros__icon">🌎</div>
+        <div class="mision__card reveal">
+          <div class="mision__icon">🌎</div>
           <h3>Soberanía Tecnológica</h3>
           <p>Recomponemos la soberanía latinoamericana en el mundo con productos IA de fácil acceso para todos.</p>
         </div>
-        <div class="nosotros__card reveal">
-          <div class="nosotros__icon">👥</div>
+        <div class="mision__card reveal">
+          <div class="mision__icon">👥</div>
           <h3>Talento Humano</h3>
           <p>El corazón de nuestra empresa es el talento boliviano: creativo, resiliente y comprometido con la innovación.</p>
         </div>
@@ -128,37 +182,37 @@
           <div class="servicio-card__number">01</div>
           <h3 class="servicio-card__title">Consultoría en IA</h3>
           <p class="servicio-card__desc">Análisis y estrategias personalizadas para integrar la inteligencia artificial en tus procesos empresariales.</p>
-          <div class="servicio-card__line"></div>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
         </div>
         <div class="servicio-card reveal">
           <div class="servicio-card__number">02</div>
           <h3 class="servicio-card__title">Automatización de Procesos</h3>
           <p class="servicio-card__desc">Optimización y automatización inteligente de flujos de trabajo para mayor eficiencia operativa.</p>
-          <div class="servicio-card__line"></div>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
         </div>
         <div class="servicio-card reveal">
           <div class="servicio-card__number">03</div>
           <h3 class="servicio-card__title">Desarrollo de Productos IA</h3>
           <p class="servicio-card__desc">Creación de productos tecnológicos basados en IA, accesibles y adaptados al mercado latinoamericano.</p>
-          <div class="servicio-card__line"></div>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
         </div>
         <div class="servicio-card reveal">
           <div class="servicio-card__number">04</div>
           <h3 class="servicio-card__title">Transformación Digital</h3>
           <p class="servicio-card__desc">Acompañamiento completo en la transformación digital de organizaciones hacia la era de la IA.</p>
-          <div class="servicio-card__line"></div>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
         </div>
         <div class="servicio-card reveal">
           <div class="servicio-card__number">05</div>
           <h3 class="servicio-card__title">Capacitación &amp; Talento</h3>
           <p class="servicio-card__desc">Formación profesional en IA y tecnologías emergentes para equipos empresariales bolivianos.</p>
-          <div class="servicio-card__line"></div>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
         </div>
         <div class="servicio-card reveal">
           <div class="servicio-card__number">06</div>
           <h3 class="servicio-card__title">Estrategia Sostenible</h3>
           <p class="servicio-card__desc">Diseño de estrategias empresariales sostenibles potenciadas por datos e inteligencia artificial.</p>
-          <div class="servicio-card__line"></div>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
         </div>
       </div>
     </div>
@@ -220,6 +274,41 @@
     </div>
   </section>
 
+  <!-- ===== APP SECTION ===== -->
+  <section class="section app-section" id="app">
+    <div class="container app-section__inner">
+      <div class="app-section__content reveal">
+        <span class="section__tag">Nuestra App</span>
+        <h2 class="section__title">Lleva la IA en tu <span class="text-gradient">bolsillo</span></h2>
+        <p class="section__desc">
+          Descarga nuestra aplicación y accede a herramientas de inteligencia artificial
+          diseñadas para emprendedores y empresas bolivianas. Disponible pronto en ambas plataformas.
+        </p>
+        <div class="app-section__badges">
+          <a href="#" class="store-badge store-badge--dark" aria-label="Descargar en App Store">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+          <a href="#" class="store-badge store-badge--dark" aria-label="Disponible en Google Play">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.48 1.42-2.53-2.53 2.53-2.53 2.48 1.26M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+            <div>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="app-section__visual reveal">
+        <div class="app-phone">
+          <img src="8c06f86c-6da6-48ef-8b68-f23ed6e7c269.jpg" alt="Vista previa de la app Jeep Hub" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CTA BANNER ===== -->
   <section class="cta-banner">
     <div class="container cta-banner__inner">
@@ -227,7 +316,7 @@
         <h2>¿Listo para transformar tu organización con IA?</h2>
         <p>Únete a las empresas que ya están liderando la innovación en Bolivia y Latinoamérica.</p>
       </div>
-      <a href="#contacto" class="btn btn--primary btn--lg">Empezar Ahora</a>
+      <a href="#contacto" class="btn btn--cyan btn--lg">Empezar Ahora</a>
     </div>
   </section>
 
@@ -248,48 +337,82 @@
             <div class="contacto__info-icon">📍</div>
             <div>
               <h4>Ubicación</h4>
-              <p>La Paz, Bolivia</p>
+              <p>Cochabamba, Bolivia</p>
             </div>
           </div>
           <div class="contacto__info-item">
             <div class="contacto__info-icon">📧</div>
             <div>
               <h4>Email</h4>
-              <p>contacto@iabolivia.com</p>
+              <p><a href="mailto:contacto@jeephub.bo" class="info-link">contacto@jeephub.bo</a></p>
             </div>
           </div>
           <div class="contacto__info-item">
             <div class="contacto__info-icon">📱</div>
             <div>
-              <h4>Teléfono</h4>
-              <p>+591 XXX XXX XX</p>
+              <h4>Teléfono / WhatsApp</h4>
+              <p><a href="tel:+59177712345" class="info-link">+591 777 12345</a></p>
             </div>
           </div>
           <div class="contacto__social">
-            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
-            <a href="#" class="social-link" aria-label="Facebook">f</a>
-            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="https://wa.me/59177712345?text=Hola%20Jeep%20Hub%2C%20me%20interesa%20saber%20más%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" class="social-link social-link--wa" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
           </div>
         </div>
-        <form class="contacto__form reveal" id="contactForm" novalidate>
+
+        <!-- Real working form via FormSubmit.co -->
+        <form class="contacto__form reveal" id="contactForm"
+              action="https://formsubmit.co/contacto@jeephub.bo" method="POST">
+          <!-- FormSubmit config (hidden fields) -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde JeepHub.bo">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
           <div class="form-group">
             <label for="nombre">Nombre completo</label>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
           </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+591 ...">
+            </div>
           </div>
           <div class="form-group">
             <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?">
+            <select id="asunto" name="asunto">
+              <option value="Consulta general">Consulta general</option>
+              <option value="Consultoría en IA">Consultoría en IA</option>
+              <option value="Automatización">Automatización de Procesos</option>
+              <option value="Desarrollo de Productos">Desarrollo de Productos IA</option>
+              <option value="Transformación Digital">Transformación Digital</option>
+              <option value="Capacitación">Capacitación &amp; Talento</option>
+              <option value="Otro">Otro</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">Enviar Mensaje</button>
+          <button type="submit" class="btn btn--cyan btn--full" id="submitBtn">
+            <span id="submitText">Enviar Mensaje</span>
+            <span id="submitSpinner" class="spinner hidden"></span>
+          </button>
           <div class="form-success" id="formSuccess">
             ✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.
           </div>
@@ -303,16 +426,18 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#hero" class="navbar__logo">
-          <span class="logo-icon">&#9670;</span> IA <span class="logo-accent">Bolivia</span>
+          <span class="logo-text">JEEP<span class="logo-accent">HUB</span></span>
         </a>
-        <p>Inteligencia Artificial, Innovación Digital y Talento Humano para estrategias empresariales sostenibles.</p>
+        <p>Inteligencia Artificial, Innovación Digital y Talento Humano. Bolivianos por el Mundo.</p>
+        <p class="footer__location">📍 Cochabamba, Bolivia</p>
       </div>
       <div class="footer__links">
         <h4>Navegación</h4>
         <a href="#hero">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
+        <a href="#mision">Misión</a>
         <a href="#servicios">Servicios</a>
         <a href="#etapas">Proceso</a>
+        <a href="#app">App</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div class="footer__links">
@@ -322,13 +447,26 @@
         <a href="#servicios">Productos IA</a>
         <a href="#servicios">Transformación Digital</a>
       </div>
+      <div class="footer__links">
+        <h4>Contacto Directo</h4>
+        <a href="mailto:contacto@jeephub.bo">📧 contacto@jeephub.bo</a>
+        <a href="tel:+59177712345">📱 +591 777 12345</a>
+        <a href="https://wa.me/59177712345?text=Hola%20Jeep%20Hub" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      </div>
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>&copy; 2026 IA Bolivia. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Jeep Hub — IA Bolivia. Todos los derechos reservados. Cochabamba, Bolivia.</p>
       </div>
     </div>
   </footer>
+
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/59177712345?text=Hola%20Jeep%20Hub%2C%20me%20interesa%20saber%20más%20sobre%20sus%20servicios"
+     target="_blank" rel="noopener noreferrer"
+     class="whatsapp-float" aria-label="Contáctanos por WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <script src="js/main.js"></script>
 </body>
