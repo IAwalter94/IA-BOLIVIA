@@ -1,5 +1,5 @@
 /* ============================================
-   JEEP HUB / IA BOLIVIA — Main JavaScript
+   AI BolivIA SRL — Main JavaScript
    - Real form submission via FormSubmit.co
    - Functional buttons & navigation
    - Animated counters, scroll reveal, mobile menu

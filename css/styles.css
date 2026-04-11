@@ -1,5 +1,5 @@
 /* ============================================
-   JEEP HUB / IA BOLIVIA — Professional Website
+   AI BolivIA SRL — Professional Website
    Design inspired by reference image:
    - Dark cinematic background
    - Cyan/neon glow accents (#00E5FF)
@@ -915,8 +915,8 @@ a {
 
 .contacto__grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 48px;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  gap: 36px;
   align-items: start;
 }
 
@@ -1109,6 +1109,112 @@ a {
 
 .hidden {
   display: none !important;
+}
+
+/* === QR CODE SECTION === */
+.contacto__qr-section {
+  text-align: center;
+}
+
+.qr-section__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.qr-section__desc {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.qr-section__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.qr-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: all var(--transition);
+  width: 100%;
+  max-width: 240px;
+}
+
+.qr-card:hover {
+  border-color: var(--cyan-border);
+  box-shadow: var(--shadow-cyan);
+  transform: translateY(-4px);
+}
+
+.qr-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.qr-card__badge--wa {
+  background: rgba(37, 211, 102, 0.12);
+  color: #25D366;
+  border: 1px solid rgba(37, 211, 102, 0.3);
+}
+
+.qr-card__badge--wc {
+  background: rgba(9, 184, 58, 0.12);
+  color: #09B83A;
+  border: 1px solid rgba(9, 184, 58, 0.3);
+}
+
+.qr-card__image {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-card__image img {
+  width: 160px;
+  height: 160px;
+}
+
+.qr-card__number {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cyan);
+  letter-spacing: 1px;
+}
+
+.btn--sm {
+  padding: 8px 20px;
+  font-size: 0.8rem;
+}
+
+.qr-card__hint {
+  font-size: 0.78rem;
+  color: var(--gray-500);
+  font-style: italic;
 }
 
 /* === WHATSAPP FLOATING BUTTON === */
