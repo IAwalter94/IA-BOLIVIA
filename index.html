@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI BolivIA SRL — Inteligencia Artificial, Innovación Digital y Talento Humano. Bolivianos por el Mundo. Cochabamba, Bolivia.">
+  <meta name="theme-color" content="#0A0E1A">
+  <title>AI BolivIA SRL — IA Bolivia | Bolivianos por el Mundo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">
+        <span class="logo-text">AI<span class="logo-accent">BolivIA</span></span>
+      </a>
+      <nav class="navbar__links" id="navLinks">
+        <a href="#hero" class="nav-link active">Inicio</a>
+        <a href="#mision" class="nav-link">Misión</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#etapas" class="nav-link">Proceso</a>
+        <a href="#app" class="nav-link">App</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO — matches the reference image ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="portada .jpg" alt="Paisaje boliviano — padre e hija caminando con teleférico y ciudad de fondo" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
+
+    <!-- Circuit pattern overlay (decorative) -->
+    <div class="hero__circuits" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <!-- Left column: Brand + App -->
+      <div class="hero__left">
+        <h1 class="hero__title">
+          <span class="title-flag">IA BOLIVIA</span>
+        </h1>
+        <p class="hero__tagline">BOLIVIANOS POR EL MUNDO</p>
+
+        <!-- AI Icon (glowing card like the image) -->
+        <div class="hero__ai-card">
+          <div class="ai-card__icon">
+            <svg viewBox="0 0 64 64" width="54" height="54" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="32" cy="20" r="10"/>
+              <path d="M22 20c0 8 10 16 10 24"/>
+              <path d="M42 20c0 8-10 16-10 24"/>
+              <circle cx="20" cy="14" r="3"/>
+              <circle cx="44" cy="14" r="3"/>
+              <path d="M20 14h-6M44 14h6"/>
+              <path d="M32 10V4"/>
+              <text x="38" y="18" font-size="10" fill="currentColor" stroke="none" font-weight="700">A</text>
+              <path d="M26 48a6 6 0 0012 0" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="ai-card__label">Prueba Ahora</span>
+        </div>
+
+        <!-- App Store badges -->
+        <div class="hero__badges">
+          <a href="#app" class="store-badge" aria-label="Descargar en App Store">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+          <a href="#app" class="store-badge" aria-label="Disponible en Google Play">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.48 1.42-2.53-2.53 2.53-2.53 2.48 1.26M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+            <div>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right column: Mission Statement (frosted glass panel) -->
+      <div class="hero__right">
+        <div class="mission-panel">
+          <h2 class="mission-panel__title">MISSION STATEMENT</h2>
+          <p>
+            En AI BolivIA SRL nos enfocamos en el equilibrio de la Inteligencia Artificial,
+            la Innovación digital y el talento humano para gestionar estrategias
+            empresariales sostenibles para organizaciones.
+          </p>
+          <p>
+            Recomponemos la soberanía latinoamericana en el mundo con productos IA
+            de fácil acceso, contribuyendo al desarrollo tecnológico de Bolivia
+            y toda la comunidad andina.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero__stats-bar">
+      <div class="container hero__stats">
+        <div class="stat">
+          <span class="stat__number" data-target="150">0</span>+
+          <span class="stat__label">Proyectos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="50">0</span>+
+          <span class="stat__label">Empresas</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="12">0</span>+
+          <span class="stat__label">Países</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="4">0</span>
+          <span class="stat__label">Etapas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISIÓN / NOSOTROS ===== -->
+  <section class="section mision" id="mision">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Quiénes Somos</span>
+        <h2 class="section__title">El equilibrio entre <span class="text-gradient">tecnología y humanidad</span></h2>
+        <p class="section__desc">
+          En AI BolivIA SRL nos enfocamos en el equilibrio de la Inteligencia Artificial,
+          la Innovación digital y el talento humano para gestionar estrategias empresariales
+          sostenibles para organizaciones. Bolivianos por el Mundo.
+        </p>
+      </div>
+      <div class="mision__grid">
+        <div class="mision__card reveal">
+          <div class="mision__icon">🤖</div>
+          <h3>Inteligencia Artificial</h3>
+          <p>Desarrollamos soluciones de IA adaptadas a las necesidades reales de las empresas bolivianas y latinoamericanas.</p>
+        </div>
+        <div class="mision__card reveal">
+          <div class="mision__icon">💡</div>
+          <h3>Innovación Digital</h3>
+          <p>Transformamos procesos tradicionales con tecnología de punta, accesible y sostenible para el crecimiento empresarial.</p>
+        </div>
+        <div class="mision__card reveal">
+          <div class="mision__icon">🌎</div>
+          <h3>Soberanía Tecnológica</h3>
+          <p>Recomponemos la soberanía latinoamericana en el mundo con productos IA de fácil acceso para todos.</p>
+        </div>
+        <div class="mision__card reveal">
+          <div class="mision__icon">👥</div>
+          <h3>Talento Humano</h3>
+          <p>El corazón de nuestra empresa es el talento boliviano: creativo, resiliente y comprometido con la innovación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section servicios" id="servicios">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Nuestros Servicios</span>
+        <h2 class="section__title">Soluciones <span class="text-gradient">de alto impacto</span></h2>
+        <p class="section__desc">
+          Ofrecemos servicios integrales de IA e innovación digital diseñados
+          para impulsar el crecimiento sostenible de tu organización.
+        </p>
+      </div>
+      <div class="servicios__grid">
+        <div class="servicio-card reveal">
+          <div class="servicio-card__number">01</div>
+          <h3 class="servicio-card__title">Consultoría en IA</h3>
+          <p class="servicio-card__desc">Análisis y estrategias personalizadas para integrar la inteligencia artificial en tus procesos empresariales.</p>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
+        </div>
+        <div class="servicio-card reveal">
+          <div class="servicio-card__number">02</div>
+          <h3 class="servicio-card__title">Automatización de Procesos</h3>
+          <p class="servicio-card__desc">Optimización y automatización inteligente de flujos de trabajo para mayor eficiencia operativa.</p>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
+        </div>
+        <div class="servicio-card reveal">
+          <div class="servicio-card__number">03</div>
+          <h3 class="servicio-card__title">Desarrollo de Productos IA</h3>
+          <p class="servicio-card__desc">Creación de productos tecnológicos basados en IA, accesibles y adaptados al mercado latinoamericano.</p>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
+        </div>
+        <div class="servicio-card reveal">
+          <div class="servicio-card__number">04</div>
+          <h3 class="servicio-card__title">Transformación Digital</h3>
+          <p class="servicio-card__desc">Acompañamiento completo en la transformación digital de organizaciones hacia la era de la IA.</p>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
+        </div>
+        <div class="servicio-card reveal">
+          <div class="servicio-card__number">05</div>
+          <h3 class="servicio-card__title">Capacitación &amp; Talento</h3>
+          <p class="servicio-card__desc">Formación profesional en IA y tecnologías emergentes para equipos empresariales bolivianos.</p>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
+        </div>
+        <div class="servicio-card reveal">
+          <div class="servicio-card__number">06</div>
+          <h3 class="servicio-card__title">Estrategia Sostenible</h3>
+          <p class="servicio-card__desc">Diseño de estrategias empresariales sostenibles potenciadas por datos e inteligencia artificial.</p>
+          <a href="#contacto" class="servicio-card__link">Solicitar →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ETAPAS ===== -->
+  <section class="section etapas" id="etapas">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Nuestro Proceso</span>
+        <h2 class="section__title">Las <span class="text-gradient">4 Etapas</span> de transformación</h2>
+        <p class="section__desc">
+          Nuestro método de trabajo se estructura en 4 etapas clave
+          que garantizan resultados medibles y sostenibles.
+        </p>
+      </div>
+      <div class="etapas__timeline">
+        <div class="etapa-card reveal" data-step="1">
+          <div class="etapa-card__img">
+            <img src="etapa 1.jpg" alt="Etapa 1 — Diagnóstico" loading="lazy">
+          </div>
+          <div class="etapa-card__body">
+            <span class="etapa-card__step">Etapa 01</span>
+            <h3 class="etapa-card__title">Diagnóstico &amp; Análisis</h3>
+            <p class="etapa-card__desc">Evaluamos el estado actual de tu organización, identificamos oportunidades de mejora y definimos la hoja de ruta tecnológica personalizada.</p>
+          </div>
+        </div>
+        <div class="etapa-card reveal" data-step="2">
+          <div class="etapa-card__img">
+            <img src="etapa 2.jpg" alt="Etapa 2 — Diseño" loading="lazy">
+          </div>
+          <div class="etapa-card__body">
+            <span class="etapa-card__step">Etapa 02</span>
+            <h3 class="etapa-card__title">Diseño de Estrategia</h3>
+            <p class="etapa-card__desc">Diseñamos la estrategia integral combinando IA, innovación digital y talento humano adaptada a tus objetivos empresariales.</p>
+          </div>
+        </div>
+        <div class="etapa-card reveal" data-step="3">
+          <div class="etapa-card__img">
+            <img src="etapa 3.jpg" alt="Etapa 3 — Implementación" loading="lazy">
+          </div>
+          <div class="etapa-card__body">
+            <span class="etapa-card__step">Etapa 03</span>
+            <h3 class="etapa-card__title">Implementación</h3>
+            <p class="etapa-card__desc">Ejecutamos el plan con metodologías ágiles, implementando las soluciones tecnológicas y capacitando a tu equipo en cada paso.</p>
+          </div>
+        </div>
+        <div class="etapa-card reveal" data-step="4">
+          <div class="etapa-card__img">
+            <img src="etapa 4.jpg" alt="Etapa 4 — Escalamiento" loading="lazy">
+          </div>
+          <div class="etapa-card__body">
+            <span class="etapa-card__step">Etapa 04</span>
+            <h3 class="etapa-card__title">Escalamiento &amp; Impacto</h3>
+            <p class="etapa-card__desc">Escalamos las soluciones exitosas, medimos el impacto real y aseguramos la sostenibilidad del cambio tecnológico a largo plazo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APP SECTION ===== -->
+  <section class="section app-section" id="app">
+    <div class="container app-section__inner">
+      <div class="app-section__content reveal">
+        <span class="section__tag">Nuestra App</span>
+        <h2 class="section__title">Lleva la IA en tu <span class="text-gradient">bolsillo</span></h2>
+        <p class="section__desc">
+          Descarga nuestra aplicación y accede a herramientas de inteligencia artificial
+          diseñadas para emprendedores y empresas bolivianas. Disponible pronto en ambas plataformas.
+        </p>
+        <div class="app-section__badges">
+          <a href="#" class="store-badge store-badge--dark" aria-label="Descargar en App Store">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div>
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+          <a href="#" class="store-badge store-badge--dark" aria-label="Disponible en Google Play">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.24-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.25.92-.59 1.19l-2.48 1.42-2.53-2.53 2.53-2.53 2.48 1.26M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+            <div>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="app-section__visual reveal">
+        <div class="app-phone">
+          <img src="8c06f86c-6da6-48ef-8b68-f23ed6e7c269.jpg" alt="Vista previa de la app AI BolivIA" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <div class="cta-banner__content">
+        <h2>¿Listo para transformar tu organización con IA?</h2>
+        <p>Únete a las empresas que ya están liderando la innovación en Bolivia y Latinoamérica.</p>
+      </div>
+      <a href="#contacto" class="btn btn--cyan btn--lg">Empezar Ahora</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section contacto" id="contacto">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Contacto</span>
+        <h2 class="section__title">Hablemos de tu <span class="text-gradient">próximo proyecto</span></h2>
+        <p class="section__desc">
+          Escríbenos y te responderemos a la brevedad. Estamos listos para
+          ayudarte a dar el siguiente paso en innovación.
+        </p>
+      </div>
+      <div class="contacto__grid">
+        <div class="contacto__info reveal">
+          <div class="contacto__info-item">
+            <div class="contacto__info-icon">📍</div>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Cochabamba, Bolivia</p>
+            </div>
+          </div>
+          <div class="contacto__info-item">
+            <div class="contacto__info-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:boliviascewalt@gmail.com" class="info-link">boliviascewalt@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contacto__info-item">
+            <div class="contacto__info-icon">📱</div>
+            <div>
+              <h4>Teléfono / WhatsApp</h4>
+              <p><a href="tel:+59177428831" class="info-link">(+591) 77428831</a></p>
+            </div>
+          </div>
+          <div class="contacto__social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="https://wa.me/59177428831?text=Hola%20AI%20BolivIA%20SRL%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" class="social-link social-link--wa" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ===== QR CODES — WhatsApp & WeChat ===== -->
+        <div class="contacto__qr-section reveal">
+          <h3 class="qr-section__title">📱 Escanea y Conéctate</h3>
+          <p class="qr-section__desc">Escanea el código QR con tu teléfono para chatear directamente con nosotros.</p>
+          <div class="qr-section__grid">
+            <div class="qr-card">
+              <div class="qr-card__badge qr-card__badge--wa">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+              </div>
+              <div class="qr-card__image">
+                <img src="qr-whatsapp.svg" alt="QR Code — Abrir chat de WhatsApp con AI BolivIA SRL (+591) 77428831" width="180" height="180">
+              </div>
+              <p class="qr-card__number">(+591) 77428831</p>
+              <a href="https://wa.me/59177428831?text=Hola%20AI%20BolivIA%20SRL%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer" class="btn btn--cyan btn--sm">Abrir Chat</a>
+            </div>
+            <div class="qr-card">
+              <div class="qr-card__badge qr-card__badge--wc">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm3.638 4.413c-2.1 0-4.044.656-5.544 1.842-1.344 1.063-2.209 2.504-2.429 4.04-.22 1.537.135 3.054 1 4.263.124.173.19.387.127.599l-.263 1.396c-.015.072-.035.145-.035.22 0 .169.136.307.305.307a.38.38 0 00.167-.054l1.572-1.073c.113-.075.238-.118.368-.118.072 0 .144.013.213.037a9.453 9.453 0 002.519.343c4.368 0 7.913-2.908 7.913-6.498 0-3.465-3.431-6.304-7.913-6.304zm-3.298 3.481c.542 0 .98.446.98.996s-.438.996-.98.996a.99.99 0 01-.98-.996c0-.55.438-.996.98-.996zm5.395 0c.542 0 .981.446.981.996s-.439.996-.981.996a.99.99 0 01-.98-.996c0-.55.438-.996.98-.996z"/></svg>
+                WeChat
+              </div>
+              <div class="qr-card__image">
+                <img src="qr-wechat.svg" alt="QR Code — WeChat AI BolivIA SRL (+591) 77428831" width="180" height="180">
+              </div>
+              <p class="qr-card__number">(+591) 77428831</p>
+              <span class="qr-card__hint">Escanea con WeChat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real working form via FormSubmit.co -->
+        <form class="contacto__form reveal" id="contactForm"
+              action="https://formsubmit.co/boliviascewalt@gmail.com" method="POST">
+          <!-- FormSubmit config (hidden fields) -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde AI BolivIA SRL">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+591 ...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+              <option value="Consulta general">Consulta general</option>
+              <option value="Consultoría en IA">Consultoría en IA</option>
+              <option value="Automatización">Automatización de Procesos</option>
+              <option value="Desarrollo de Productos">Desarrollo de Productos IA</option>
+              <option value="Transformación Digital">Transformación Digital</option>
+              <option value="Capacitación">Capacitación &amp; Talento</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--cyan btn--full" id="submitBtn">
+            <span id="submitText">Enviar Mensaje</span>
+            <span id="submitSpinner" class="spinner hidden"></span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="navbar__logo">
+          <span class="logo-text">AI<span class="logo-accent">BolivIA</span></span>
+        </a>
+        <p>Inteligencia Artificial, Innovación Digital y Talento Humano. Bolivianos por el Mundo. AI BolivIA SRL.</p>
+        <p class="footer__location">📍 Cochabamba, Bolivia</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navegación</h4>
+        <a href="#hero">Inicio</a>
+        <a href="#mision">Misión</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#etapas">Proceso</a>
+        <a href="#app">App</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer__links">
+        <h4>Servicios</h4>
+        <a href="#servicios">Consultoría en IA</a>
+        <a href="#servicios">Automatización</a>
+        <a href="#servicios">Productos IA</a>
+        <a href="#servicios">Transformación Digital</a>
+      </div>
+      <div class="footer__links">
+        <h4>Contacto Directo</h4>
+        <a href="mailto:boliviascewalt@gmail.com">📧 boliviascewalt@gmail.com</a>
+        <a href="tel:+59177428831">📱 (+591) 77428831</a>
+        <a href="https://wa.me/59177428831?text=Hola%20AI%20BolivIA%20SRL" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 AI BolivIA SRL. Todos los derechos reservados. Cochabamba, Bolivia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/59177428831?text=Hola%20AI%20BolivIA%20SRL%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20sus%20servicios"
+     target="_blank" rel="noopener noreferrer"
+     class="whatsapp-float" aria-label="Contáctanos por WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
